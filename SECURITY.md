@@ -20,18 +20,23 @@ Nilog is a call-site extension layer over `Microsoft.Extensions.Logging`.
 
 | Concern                                                                               | Owner                                                  |
 | --------- | ------- |
-| Bounded template cache, bounded exception reports, isolation of throwing `ToString()` | Nilog                                                  |
+| Shared dictionary admission limits and built-in report/typed-format safeguards (see README limits) | Nilog                                                  |
 | Redaction of secrets/PII in arguments and exception messages                          | The application                                        |
 | Log-forging protection (newline/control characters in values), encoding, retention    | The provider / sink                                    |
 | Exceptions thrown by providers' `Log` implementation                                  | The provider (they propagate)                          |
 | Templates must be compile-time constants; never build templates from untrusted input  | The application (analyzer `NILOG001`/`NILOG003` helps) |
 
-`Exception.Data` is intentionally not rendered in exception reports.
+`Exception.Data` is intentionally omitted from built-in report text. The original exception
+object is still forwarded to the provider; a custom formatter may expose different fields.
+Dictionary cache limits exclude per-thread last-template slots. Report output limits do not bound
+all temporary allocation, compact title/source text or custom formatter output. See the README's
+[implementation limits](README.md#-limitations) before treating these safeguards as a memory or
+redaction boundary.
 
 ## Supply chain
 
-- GitHub Actions are pinned to commit SHAs; workflows default to read-only permissions.
-- NuGet restore uses lock files (`packages.lock.json`) with `--locked-mode` in CI.
+- Root GitHub Actions workflows pin actions to commit SHAs and default to read-only permissions. The nested `Nilog/.github/workflows/ci.yml` is retained historical configuration outside root workflow discovery.
+- Root CI uses `packages.lock.json` and `--locked-mode` for the solution restore. The analyzer test step can perform its own restore; release demo restore/publish also does not consistently pass locked mode.
 - Package signing and SBOM publication are release-time procedures that require maintainer
   credentials; they are not performed by the repository automatically.
 
