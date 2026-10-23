@@ -9,6 +9,10 @@ permalink: /documentation/
 
 Find typed ILogger call patterns, provider configuration, analyzer guidance and reproducible development commands.
 
+<a id="explore-more"></a>
+<a id="markdown-source-library"></a>
+<a id="read-online"></a>
+
 ## 🧭 Choose a guide
 
 | Task | Guide |

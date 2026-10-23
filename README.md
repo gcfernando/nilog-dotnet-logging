@@ -357,6 +357,8 @@ sink exactly as they normally would.
 
 <a id="-install"></a>
 
+<a id="️-optional-advanced-configuration"></a>
+
 ## 📦 Prerequisites and installation
 
 ```bash
@@ -1208,6 +1210,8 @@ A few deliberate design choices do all the work:
 
 <a id="-build-test-benchmark"></a>
 
+<a id="️-build-test-benchmark"></a>
+
 ## 🧪 Development and testing
 
 The following commands are for repository contributors. Package consumers only need a compatible .NET application, its existing `ILogger` provider and the Nilog package. For current test discovery, run `dotnet test Nilog.Tests/Nilog.Tests.csproj --list-tests -f net10.0` from the inner `Nilog/` directory; discovery counts are not a passing test report.
@@ -1366,6 +1370,8 @@ job; they are **not** reproduced here because they overstated the practical gap 
 ---
 
 <a id="-limitations"></a>
+
+<a id="️-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 
