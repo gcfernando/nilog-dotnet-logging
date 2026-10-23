@@ -5,32 +5,32 @@ description: "Typed ILogger extensions and Roslyn analyzers for structured loggi
 permalink: /documentation/
 ---
 
-Browse the published guides, examples and reference pages for **Nilog**. Each guide has a readable web page; the Markdown sources remain available on GitHub.
+# Nilog Documentation
 
-## Read online
+Find typed ILogger call patterns, provider configuration, analyzer guidance and reproducible development commands.
 
-<table>
-<thead><tr><th>Guide</th><th>Markdown or HTML source</th></tr></thead>
-<tbody>
-{% assign guides = site.html_pages | sort: 'url' %}
-{% for guide in guides %}{% if guide.sitemap != false and guide.url != page.url and guide.url != '/404.html' %}
-<tr><td><a href="{{ guide.url | absolute_url }}">{{ guide.title | default: guide.name | escape }}</a></td><td><a href="https://github.com/{{ site.repository }}/blob/main/{{ guide.path | uri_escape }}">View source</a></td></tr>
-{% endif %}{% endfor %}
-{% for guide in site.static_files %}{% if guide.extname == '.html' and guide.sitemap != false %}
-<tr><td><a href="{{ guide.path | replace: '/index.html', '/' | absolute_url }}">{% if guide.path == '/Linux_Commands/index.html' %}Linux Command Reference{% elsif guide.path contains 'ai_coding_plugins_beginners_guide' %}AI Coding Add-ons: Beginner’s Guide{% else %}{{ guide.name | escape }} — {{ guide.path | escape }}{% endif %}</a></td><td><a href="https://github.com/{{ site.repository }}/blob/main{{ guide.path | uri_escape }}">View HTML source</a></td></tr>
-{% endif %}{% endfor %}
-</tbody>
-</table>
+## 🧭 Choose a guide
 
-## Markdown source library
+| Task | Guide |
+|---|---|
+| Add Nilog to an existing ILogger application | [Quick start](README.md#-quick-start) and [installation](README.md#-install) |
+| Choose typed logging or exception overloads | [Method selection](README.md#-choosing-the-right-method) and [API reference](README.md#-api-reference) |
+| Configure levels, providers, cache or flush hooks | [Configuration](README.md#-optional-advanced-configuration) |
+| Enable the Roslyn analyzer package | [NILOG001–NILOG008 reference](README.md#-static-analysis-niloganalyzers) |
+| Integrate ASP.NET Core, workers or Functions | [Recipes](README.md#-recipes) |
+| Understand allocations and benchmark limits | [Architecture](README.md#-how-it-works), [benchmarks](README.md#-benchmarks) and [limitations](README.md#-limitations) |
+| Build and run repository tests | [Development and testing](README.md#-build-test-benchmark) |
+| Read the package-facing guide | [NuGet README](Nilog/README.nuget.md) |
+| Report a vulnerability or check release history | [Security policy](SECURITY.md) and [changelog](CHANGELOG.md) |
 
-[View this documentation index source](https://github.com/{{ site.repository }}/blob/main/documentation.md). These are the authored Markdown files. Some are package-specific documents or alternate source formats of the same guide.
+## 🔗 Source references
 
-{% assign sources = site.static_files | sort: 'path' %}
-{% for source in sources %}{% if source.extname == '.md' %}
-- [{{ source.path | escape }}](https://github.com/{{ site.repository }}/blob/main{{ source.path | uri_escape }})
-{% endif %}{% endfor %}
+[Core implementation](Nilog/Nilog.Core/Nilogger.cs) · [High-arity source generator](Nilog/Nilog.SourceGenerators/HighArityOverloadGenerator.cs) · [Pinned SDK](global.json) · [CI workflow](.github/workflows/ci.yml)
 
-## Explore more
+Nilog is a call-site layer over existing providers. Disabled typed-call allocation claims do not cover argument-expression evaluation or allocations performed by an enabled provider. Historical benchmark tables describe their stated harness and environment, not a guarantee for every application.
 
-[All developer projects](https://gcfernando.github.io/gcfernando/projects/) · [Repository on GitHub](https://github.com/gcfernando/nilog) · [XML sitemap](https://gcfernando.github.io/nilog/sitemap.xml)
+## 🌐 Published documentation
+
+This index is also rendered by the repository's GitHub Pages site. Relative links above point to the authored repository documents; package READMEs target NuGet readers and may use absolute GitHub links.
+
+[Repository](https://github.com/gcfernando/nilog) · [Project overview](README.md)
