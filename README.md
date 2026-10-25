@@ -3,6 +3,8 @@
 
 # ⚡ Nilog — Low-Allocation Structured Logging Extensions for .NET
 
+**Read online:** [Documentation website](https://gcfernando.github.io/nilog-dotnet-logging/) · [All guides](documentation.md)
+
 <a id="high-performance-c-structured-logging-extensions-for-microsoftextensionslogging"></a>
 
 High-performance C# structured logging extensions for `Microsoft.Extensions.Logging`.
@@ -10,7 +12,7 @@ High-performance C# structured logging extensions for `Microsoft.Extensions.Logg
 **Typed message-template overloads reduce call-site allocations while preserving your existing `ILogger` pipeline and sinks.**
 
 [![NuGet](https://img.shields.io/badge/NuGet-v1.0.6-004880?logo=nuget&logoColor=white)](https://www.nuget.org/packages/Nilog)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/gcfernando/nilog-dotnet-logging/blob/main/LICENSE)
 [![.NET](https://img.shields.io/badge/.NET-8.0%20%7C%209.0%20%7C%2010.0-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com)
 [![C#](https://img.shields.io/badge/C%23-latest-239120?logo=csharp&logoColor=white)](https://learn.microsoft.com/dotnet/csharp/)
 [![Tests](https://img.shields.io/badge/tests-build%20and%20run-2ea44f?logo=xunit&logoColor=white)](#-build-test-benchmark)
@@ -549,7 +551,7 @@ For example, select the environment in a launch profile to load the matching
 ```
 
 For Azure Functions, configure host-level filters in `host.json`. The included
-[`Nilog.Function`](https://github.com/gcfernando/nilog/tree/main/Nilog/Nilog.Function) sample uses this form:
+[`Nilog.Function`](https://github.com/gcfernando/nilog-dotnet-logging/tree/main/Nilog/Nilog.Function) sample uses this form:
 
 ```jsonc
 // host.json
@@ -745,7 +747,7 @@ or gets pulled transitively into anything that references your project.
 
 Building this repo from source instead of consuming the NuGet package? Reference the analyzer
 project directly with `OutputItemType="Analyzer"` so it runs at build time without becoming a
-runtime dependency — exactly how [`Nilog.Function`](https://github.com/gcfernando/nilog/tree/main/Nilog/Nilog.Function) wires it in:
+runtime dependency — exactly how [`Nilog.Function`](https://github.com/gcfernando/nilog-dotnet-logging/tree/main/Nilog/Nilog.Function) wires it in:
 
 ```xml
 <ProjectReference Include="..\Nilog.Analyzers\Nilog.Analyzers.csproj"
@@ -921,7 +923,7 @@ public sealed class RequestLoggingMiddleware(ILogger<RequestLoggingMiddleware> l
 }
 ```
 
-> The full runnable version lives in [`Nilog.Function`](https://github.com/gcfernando/nilog/tree/main/Nilog/Nilog.Function) — an HTTP checkout
+> The full runnable version lives in [`Nilog.Function`](https://github.com/gcfernando/nilog-dotnet-logging/tree/main/Nilog/Nilog.Function) — an HTTP checkout
 > logging sample (`POST /api/orders`) with simulated inventory, payments, shipment and readiness.
 > Its retry examples log a proposed delay but do not wait. Request validation is intentionally
 > minimal; this is not a production checkout implementation. The shutdown callback force-flushes
@@ -1554,7 +1556,7 @@ Follow the [security policy](SECURITY.md) for private vulnerability reporting an
 
 ## 📄 Support and license
 
-Use the [issue tracker](https://github.com/gcfernando/nilog/issues) for reproducible bugs and feature proposals, and the [documentation index](documentation.md) to choose a guide. Include target framework, compiler version, provider and a minimal call shape for overload or formatting problems.
+Use the [issue tracker](https://github.com/gcfernando/nilog-dotnet-logging/issues) for reproducible bugs and feature proposals, and the [documentation index](documentation.md) to choose a guide. Include target framework, compiler version, provider and a minimal call shape for overload or formatting problems.
 
 
 **Nilog** built with care by **Gehan Fernando** — MIT Licensed
@@ -1566,4 +1568,4 @@ Use the [issue tracker](https://github.com/gcfernando/nilog/issues) for reproduc
 
 ## Documentation links
 
-[Read all Nilog guides online](https://gcfernando.github.io/nilog/documentation/) · [Project overview](https://gcfernando.github.io/nilog/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Nilog guides online](documentation.md) · [Project overview](https://gcfernando.github.io/nilog-dotnet-logging/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

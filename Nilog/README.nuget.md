@@ -555,4 +555,4 @@ MIT © Gehan Fernando. Full docs at [github.com/gcfernando/Nilog](https://github
 
 ## Documentation links
 
-[Read all Nilog guides online](https://gcfernando.github.io/nilog/documentation/) · [Project overview](https://gcfernando.github.io/nilog/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Nilog guides online](https://gcfernando.github.io/nilog-dotnet-logging/documentation/) · [Project overview](https://gcfernando.github.io/nilog-dotnet-logging/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

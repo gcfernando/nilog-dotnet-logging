@@ -29,7 +29,7 @@ Find typed ILogger call patterns, provider configuration, analyzer guidance and 
 
 ## 🔗 Source references
 
-[Core implementation](Nilog/Nilog.Core/Nilogger.cs) · [High-arity source generator](Nilog/Nilog.SourceGenerators/HighArityOverloadGenerator.cs) · [Pinned SDK](global.json) · [CI workflow](.github/workflows/ci.yml)
+[Core implementation](https://github.com/gcfernando/nilog-dotnet-logging/blob/main/Nilog/Nilog.Core/Nilogger.cs) · [High-arity source generator](https://github.com/gcfernando/nilog-dotnet-logging/blob/main/Nilog/Nilog.SourceGenerators/HighArityOverloadGenerator.cs) · [Pinned SDK](https://github.com/gcfernando/nilog-dotnet-logging/blob/main/global.json) · [CI workflow](https://github.com/gcfernando/nilog-dotnet-logging/blob/main/.github/workflows/ci.yml)
 
 Nilog is a call-site layer over existing providers. Disabled typed-call allocation claims do not cover argument-expression evaluation or allocations performed by an enabled provider. Historical benchmark tables describe their stated harness and environment, not a guarantee for every application.
 
@@ -37,4 +37,4 @@ Nilog is a call-site layer over existing providers. Disabled typed-call allocati
 
 This index is also rendered by the repository's GitHub Pages site. Relative links above point to the authored repository documents; package READMEs target NuGet readers and may use absolute GitHub links.
 
-[Repository](https://github.com/gcfernando/nilog) · [Project overview](README.md)
+[Repository](https://github.com/gcfernando/nilog-dotnet-logging) · [Project overview](README.md)

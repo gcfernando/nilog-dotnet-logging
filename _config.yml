@@ -1,6 +1,6 @@
 # GitHub Pages documentation site; does not configure application deployment.
 url: "https://gcfernando.github.io"
-baseurl: "/nilog"
+baseurl: "/nilog-dotnet-logging"
 title: "Nilog"
 description: "Low-allocation typed ILogger extensions for structured logging in .NET, with Roslyn analyzers, Native AOT support and performance documentation."
 lang: "en"
@@ -39,7 +39,7 @@ defaults:
       description: "Find Nilog vulnerability reporting instructions, supported version guidance and the information to include in a private security report."
 
 # Public documentation navigation and presentation.
-repository: gcfernando/nilog
+repository: gcfernando/nilog-dotnet-logging
 theme: jekyll-theme-primer
 projects_hub: https://gcfernando.github.io/gcfernando/projects/
 project_category: "Libraries & packages"
