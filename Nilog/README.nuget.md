@@ -1,8 +1,14 @@
-# ⚡ Nilog — Low-Allocation ILogger Extensions for .NET
+[Nilog documentation](../README.md)
+
+<a id="-nilog--low-allocation-ilogger-extensions-for-net"></a>
+
+# Nilog — Typed ILogger Extensions from NuGet
 
 <a id="allocation-aware-high-performance-logging-for-microsoftextensionslogging"></a>
 
 Allocation-aware, high-performance logging for `Microsoft.Extensions.Logging`
+
+> **In this guide:** [Get started](#guide-install) · [Understand the details](#guide-features) · [Check the limits](#guide-limitations)
 
 **Typed logging calls through your existing `ILogger` pipeline.**
 
@@ -113,6 +119,8 @@ Do not extrapolate micro-benchmark ratios to application performance. Full metho
 ---
 
 
+<a id="guide-limitations"></a>
+
 ## ⚠️ Limitations
 
 Enabled text rendering uses the stack path only for plain 1–8-value templates fitting its
@@ -172,6 +180,8 @@ If you need something here sooner, open an issue at
 [github.com/gcfernando/Nilog/issues](https://github.com/gcfernando/Nilog/issues).
 
 ---
+
+<a id="guide-install"></a>
 
 ## 📦 Install
 
@@ -313,6 +323,8 @@ Allocation notes describe Nilog after warmup, not argument construction or arbit
 > **Tip:** Keep templates to **≤ 16** named holes to stay on the zero-array typed path.
 
 ---
+
+<a id="guide-features"></a>
 
 ## ✨ Features
 

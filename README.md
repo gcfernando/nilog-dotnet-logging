@@ -1,7 +1,15 @@
 <!-- {% raw %} -->
 <div align="center" markdown="1">
 
-# ⚡ Nilog — Low-Allocation Structured Logging Extensions for .NET
+<a id="-nilog--low-allocation-structured-logging-extensions-for-net"></a>
+
+# Nilog — Typed Structured Logging for .NET
+
+<p align="center"><strong>Keep your ILogger pipeline. Make the logging call site work harder.</strong></p>
+
+[![Repository standards](https://github.com/gcfernando/nilog-dotnet-logging/actions/workflows/repository-standards.yml/badge.svg)](https://github.com/gcfernando/nilog-dotnet-logging/actions/workflows/repository-standards.yml) [![Read the documentation](https://img.shields.io/badge/Read-the_documentation-2563eb?style=flat-square)](https://gcfernando.github.io/nilog-dotnet-logging/)
+
+> **Start here:** [Install and start](#guide-quick-start) · [Choose an API](#guide-choosing-the-right-method) · [Read the measurements](#guide-benchmarks) · [Explore the analyzers](#guide-static-analysis-niloganalyzers)
 
 **Read online:** [Documentation website](https://gcfernando.github.io/nilog-dotnet-logging/) · [All guides](documentation.md)
 
@@ -14,13 +22,7 @@ High-performance C# structured logging extensions for `Microsoft.Extensions.Logg
 [![NuGet](https://img.shields.io/badge/NuGet-v1.0.6-004880?logo=nuget&logoColor=white)](https://www.nuget.org/packages/Nilog)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/gcfernando/nilog-dotnet-logging/blob/main/LICENSE)
 [![.NET](https://img.shields.io/badge/.NET-8.0%20%7C%209.0%20%7C%2010.0-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com)
-[![C#](https://img.shields.io/badge/C%23-latest-239120?logo=csharp&logoColor=white)](https://learn.microsoft.com/dotnet/csharp/)
-[![Tests](https://img.shields.io/badge/tests-build%20and%20run-2ea44f?logo=xunit&logoColor=white)](#-build-test-benchmark)
-[![Disabled path](https://img.shields.io/badge/disabled%20call-0%20bytes%20%7C%20~2%20ns-2ea44f)](#-benchmarks)
-[![16-arg typed](https://img.shields.io/badge/up%20to%2016--arg%20typed-0%20bytes%20disabled-brightgreen)](#-benchmarks)
 [![Analyzer](https://img.shields.io/badge/Nilog.Analyzers-NILOG001--008%20%2B%20codefix-orange)](#-static-analysis-niloganalyzers)
-[![AOT](https://img.shields.io/badge/Native%20AOT-analyzed-blueviolet)](#-thread-safety-and-lifecycle)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](#-contributing)
 
 </div>
 
@@ -307,6 +309,8 @@ Use the historical [benchmark tables](#-benchmarks) for their stated harness, in
 comparison with `LoggerMessage.Define` and `[LoggerMessage]`.
 
 ---
+
+<a id="guide-quick-start"></a>
 
 ## 🚀 Quick start
 
@@ -605,6 +609,8 @@ logger.WriteDebug(
 
 ---
 
+<a id="guide-choosing-the-right-method"></a>
+
 ## 🧭 Choosing the right method
 
 A quick map from "what I want to log" to "what to call":
@@ -653,6 +659,8 @@ A provider that consumes MEL structured state can export these named values and 
 template. Check the provider's mapping, scope support and formatting in the consuming application.
 
 ---
+
+<a id="guide-static-analysis-niloganalyzers"></a>
 
 ## 🔍 Static analysis (Nilog.Analyzers)
 
@@ -1286,6 +1294,8 @@ build or review documentation.
 | `Nilog.Benchmark`        | BenchmarkDotNet suites — 21 classes covering selected call shapes and workloads                                                                                                                          |
 
 ---
+
+<a id="guide-benchmarks"></a>
 
 ## 📊 Benchmarks
 

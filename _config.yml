@@ -25,13 +25,13 @@ defaults:
   - scope:
       path: "Nilog/README.nuget.md"
     values:
-      title: "Nilog NuGet Package — Typed ILogger Extensions for .NET"
-      description: "Install Nilog from NuGet and use typed structured logging extensions with Microsoft.Extensions.Logging, Roslyn analyzers and Native AOT support."
+      title: "Nilog — Typed ILogger Extensions from NuGet"
+      description: "Install Nilog for typed structured logging through Microsoft.Extensions.Logging, with Roslyn analyzers, configuration examples and allocation caveats."
   - scope:
       path: "README.md"
     values:
-      title: "Nilog — Low-Allocation Structured Logging Extensions for .NET"
-      description: "Low-allocation typed ILogger extensions for structured logging in .NET, with Roslyn analyzers, Native AOT support and performance documentation."
+      title: "Nilog — Typed Structured Logging for .NET"
+      description: "Use Nilog's typed ILogger extensions for low-allocation structured logging in .NET. Explore Roslyn analyzers, provider compatibility and benchmark limits."
   - scope:
       path: "SECURITY.md"
     values:
