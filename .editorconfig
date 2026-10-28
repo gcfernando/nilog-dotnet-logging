@@ -1,0 +1,19 @@
+root = true
+
+# Repository documentation and administration; application conventions remain project-specific.
+[*.{md,yml,yaml}]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+
+[*.md]
+# Two trailing spaces are meaningful Markdown hard breaks.
+trim_trailing_whitespace = false
+
+[{.editorconfig,.gitattributes,.gitignore}]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true

@@ -1569,3 +1569,7 @@ Use the [issue tracker](https://github.com/gcfernando/nilog-dotnet-logging/issue
 ## Documentation links
 
 [Read all Nilog guides online](documentation.md) · [Project overview](https://gcfernando.github.io/nilog-dotnet-logging/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+
+## Repository maintenance
+
+[Contributing](https://github.com/gcfernando/nilog-dotnet-logging/blob/main/CONTRIBUTING.md) · [Security policy](https://github.com/gcfernando/nilog-dotnet-logging/blob/main/SECURITY.md) · [Repository standards](https://github.com/gcfernando/nilog-dotnet-logging/blob/main/REPOSITORY_STANDARDS.md)

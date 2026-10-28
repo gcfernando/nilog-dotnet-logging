@@ -1,20 +1,22 @@
-################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+# .NET build and IDE output (at any project depth)
+bin/
+obj/
+.vs/
+TestResults/
+*.user
+*.suo
 
-/Nilog/.vs/Nilog
-/Nilog/Nilog.Benchmark/bin
-/Nilog/Nilog.Benchmark/obj
-/Nilog/Nilog.Core/bin
-/Nilog/Nilog.Core/obj
-/Nilog/Nilog.Demo/bin
-/Nilog/Nilog.Demo/obj
-/Nilog/Nilog.Tests/bin
-/Nilog/Nilog.Tests/obj
-/Nilog/.vs/ProjectEvaluation
-/Nilog/Nilog.Analyzers/bin
-/Nilog/Nilog.Analyzers/obj
-/Nilog/Nilog.Analyzers.Tests/bin
-/Nilog/Nilog.Analyzers.Tests/obj
-/Nilog/Nilog.SourceGenerators/bin
-/Nilog/Nilog.SourceGenerators/obj
+# Shared local files and documentation build caches
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.env
+.env.*
+!.env.example
+!.env.sample
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/

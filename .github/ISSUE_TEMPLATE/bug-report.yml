@@ -1,0 +1,30 @@
+name: Bug or documentation error
+description: Report a reproducible problem, inaccurate explanation or broken link.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "For security vulnerabilities, use the repository Security tab and private reporting form. Do not post secrets or private data here."
+  - type: input
+    id: location
+    attributes:
+      label: Affected project, file or page
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Expected and actual result
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps or proposed correction
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and verification
+      description: Include relevant versions and checks performed. Remove private paths and data.
