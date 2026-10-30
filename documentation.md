@@ -17,13 +17,13 @@ Find typed ILogger call patterns, provider configuration, analyzer guidance and 
 
 | Task | Guide |
 |---|---|
-| Add Nilog to an existing ILogger application | [Quick start](README.md#-quick-start) and [installation](README.md#-install) |
-| Choose typed logging or exception overloads | [Method selection](README.md#-choosing-the-right-method) and [API reference](README.md#-api-reference) |
-| Configure levels, providers, cache or flush hooks | [Configuration](README.md#-optional-advanced-configuration) |
-| Enable the Roslyn analyzer package | [NILOG001–NILOG008 reference](README.md#-static-analysis-niloganalyzers) |
-| Integrate ASP.NET Core, workers or Functions | [Recipes](README.md#-recipes) |
-| Understand allocations and benchmark limits | [Architecture](README.md#-how-it-works), [benchmarks](README.md#-benchmarks) and [limitations](README.md#-limitations) |
-| Build and run repository tests | [Development and testing](README.md#-build-test-benchmark) |
+| Add Nilog to an existing ILogger application | [Quick start](REFERENCE.md#-quick-start) and [installation](REFERENCE.md#-install) |
+| Choose typed logging or exception overloads | [Method selection](REFERENCE.md#-choosing-the-right-method) and [API reference](REFERENCE.md#-api-reference) |
+| Configure levels, providers, cache or flush hooks | [Configuration](REFERENCE.md#-optional-advanced-configuration) |
+| Enable the Roslyn analyzer package | [NILOG001–NILOG008 reference](REFERENCE.md#-static-analysis-niloganalyzers) |
+| Integrate ASP.NET Core, workers or Functions | [Recipes](REFERENCE.md#-recipes) |
+| Understand allocations and benchmark limits | [Architecture](REFERENCE.md#-how-it-works), [benchmarks](REFERENCE.md#-benchmarks) and [limitations](REFERENCE.md#-limitations) |
+| Build and run repository tests | [Development and testing](REFERENCE.md#-build-test-benchmark) |
 | Read the package-facing guide | [NuGet README](Nilog/README.nuget.md) |
 | Report a vulnerability or check release history | [Security policy](SECURITY.md) and [changelog](CHANGELOG.md) |
 
