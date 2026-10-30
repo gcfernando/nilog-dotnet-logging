@@ -87,7 +87,7 @@ dotnet run --project Nilog/Nilog.Demo -c Release -f net10.0
 
 Run benchmarks separately with `dotnet run --project Nilog/Nilog.Benchmark -c Release -f net10.0 -- --filter "*HighArityExtendedBenchmarks*"`. Reproduce workloads and report environment and provider behavior before interpreting timings. Keep SDK updates and dependency lock regeneration together.
 
-The root [CI workflow](.github/workflows/ci.yml) runs core and analyzer tests. The existing [release workflow](.github/workflows/release.yml) gates core package publication on core tests; it does not publish the analyzer package or rerun analyzer tests. The nested historical workflow is outside GitHub's root workflow discovery.
+The root [CI workflow](https://github.com/gcfernando/nilog-dotnet-logging/actions/workflows/ci.yml) runs core and analyzer tests. The existing [release workflow](https://github.com/gcfernando/nilog-dotnet-logging/actions/workflows/release.yml) gates core package publication on core tests; it does not publish the analyzer package or rerun analyzer tests. The nested historical workflow is outside GitHub's root workflow discovery.
 
 ## Troubleshooting and limitations
 
